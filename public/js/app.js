@@ -17,7 +17,7 @@ submit.addEventListener('submit', (e) =>{
 
     msgeOne.textContent ='Loading ...'
     msgeTwo.textContent =''
-    const url =`http://localhost:3000/weather?address=${location}`
+    const url =`/weather?address=${location}`
     fetch(url).then((response) =>{
         response.json().then((data) =>{
             //console.log(data)
